@@ -101,7 +101,7 @@ report(){
   
   echo "<br><br>Nmap Vuln Report<br>"
   echo "nmap -sV vuln " >> ./$1/$foldername/reports/$line.html
-  nmap -sV -vuln $line >> ./$1/$foldername/reports/$line.html
+  nmap -sV --script vuln $line >> ./$1/$foldername/reports/$line.html
   
   echo "</pre></div>" >> ./$1/$foldername/reports/$line.html
 
